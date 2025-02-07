@@ -4,7 +4,7 @@
   font-stretch: 75% 100%;
   font-style: normal;
   src: local("Roboto"),
-    url("/fonts/Roboto-VariableFont.ttf") format("truetype-variations");
+    url("./fonts/Roboto-VariableFont.ttf") format("truetype-variations");
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 900;
   src: local("RobotoCondensed"), local("Roboto Condensed"),
-    url("/fonts/RobotoCondensed-Black.ttf");
+    url("./fonts/RobotoCondensed-Black.ttf");
 }
 
 :root {
