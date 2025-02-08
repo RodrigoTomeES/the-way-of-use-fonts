@@ -86,7 +86,8 @@ h1 {
   line-height: 1.2;
   font-family: var(--font-family-primary);
   padding: 24px;
-  background-color: #f8f8f8;
+  color: #f0f0f0;
+  background-color: #333;
   display: inline-block;
   border-radius: 12px;
   width: 400px;
