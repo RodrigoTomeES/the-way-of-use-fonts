@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  src: local("Roboto VF"), local("Roboto Variable"),
+    url("./fonts/Roboto-VariableFont.woff2") format("woff2 supports variations"),
+    url("./fonts/Roboto-VariableFont.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  font-style: normal;
+  font-weight: 900;
+  src: local("RobotoCondensed"), local("Roboto Condensed"),
+    url("./fonts/RobotoCondensed-Black.woff2");
+}
+
+:root {
+  --font-family-primary: "Roboto";
+  --font-family-secondary: "RobotoCondensed";
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--font-family-primary);
+  padding: 24px;
+  color: #f0f0f0;
+  background-color: #333;
+  display: inline-block;
+  border-radius: 12px;
+  width: 400px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  font-family: var(--font-family-secondary);
+}
+
+section {
+  max-width: 800px;
+}

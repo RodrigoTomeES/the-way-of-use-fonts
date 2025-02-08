@@ -29,6 +29,21 @@ pnpx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regu
 
 Example 02 contains a website using variable fonts instead of multilple static fonts.
 
+Instead of using multiple static fonts, you can use a single variable font that contains all the styles.
+
+```bash
+# Using bun
+bunx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-VariableFont.ttf' --pathOut='./03/fonts/Roboto-VariableFont.woff2'
+
+# Using npx
+npx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-VariableFont.ttf' --pathOut='./03/fonts/Roboto-VariableFont.woff2'
+
+# Using pnpx
+pnpx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-VariableFont.ttf' --pathOut='./03/fonts/Roboto-VariableFont.woff2'
+```
+
+[Link](./03/index.html)
+
 ## 04
 
 Example 04 contains a website using subsetting fonts.
