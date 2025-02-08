@@ -4,6 +4,8 @@
 
 Example 01 contains a website that use fonts without any optimization.
 
+[Link](./01/index.html)
+
 ## 02
 
 Example 02 contains a website with the best format for the fonts that is right now woff2.
