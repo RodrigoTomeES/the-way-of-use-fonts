@@ -1,4 +1,4 @@
-# the-way-of-use-fonts
+# The way of use fonts
 
 ## 01
 
@@ -9,6 +9,21 @@ Example 01 contains a website that use fonts without any optimization.
 ## 02
 
 Example 02 contains a website with the best format for the fonts that is right now woff2.
+
+You can use font-convert npm package to convert fonts to woff2 format.
+
+```bash
+# Using bun
+bunx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regular.ttf' --pathOut='./02/fonts/Roboto-Regular.woff2'
+
+# Using npx
+npx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regular.ttf' --pathOut='./02/fonts/Roboto-Regular.woff2'
+
+# Using pnpx
+pnpx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regular.ttf' --pathOut='./02/fonts/Roboto-Regular.woff2'
+```
+
+[Link](./02/index.html)
 
 ## 03
 

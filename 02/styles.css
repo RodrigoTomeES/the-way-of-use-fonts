@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 800;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-style: normal;
+  src: local("Roboto"), url("./fonts/Roboto-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  font-style: normal;
+  font-weight: 900;
+  src: local("RobotoCondensed"), local("Roboto Condensed"),
+    url("./fonts/RobotoCondensed-Black.woff2");
+}
+
+:root {
+  --font-family-primary: "Roboto";
+  --font-family-secondary: "RobotoCondensed";
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--font-family-primary);
+  padding: 24px;
+  color: #f0f0f0;
+  background-color: #333;
+  display: inline-block;
+  border-radius: 12px;
+  width: 400px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  font-family: var(--font-family-secondary);
+}
+
+section {
+  max-width: 800px;
+}
