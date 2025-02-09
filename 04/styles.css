@@ -38,7 +38,7 @@ h1 {
   background-color: #333;
   display: inline-block;
   border-radius: 12px;
-  width: 400px;
+  width: minmax(400px, 100%);
 }
 
 h2 {
