@@ -73,6 +73,21 @@ pyftsubset ./04/fonts/Roboto-VariableFont-partial.woff2 --text-file="./04/index.
 
 Example 05 contains a website using a good fallback values.
 
+We will use [fontpie](https://github.com/pixel-point/fontpie) to generate the fallback values.
+
+```bash
+# Using bunx
+bunx fontpie ./05/fonts/RobotoCondensed-Black.woff2 --name RobotoCondensed --weight 900
+
+# Using npx
+npx fontpie ./05/fonts/RobotoCondensed-Black.woff2 --name RobotoCondensed --weight 900
+
+# Using pnpx
+pnpx fontpie ./05/fonts/RobotoCondensed-Black.woff2 --name RobotoCondensed --weight 900
+```
+
+[Link](./05/index.html)
+
 ## 06
 
 Example 06 contains a website using a good font-display value.
