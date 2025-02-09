@@ -10,7 +10,7 @@ Example 01 contains a website that use fonts without any optimization.
 
 Example 02 contains a website with the best format for the fonts that is right now woff2.
 
-You can use font-convert npm package to convert fonts to woff2 format.
+You can use [font-convert](https://github.com/hayes0724/web-font-converter) npm package to convert fonts to woff2 format.
 
 ```bash
 # Using bun
@@ -47,6 +47,27 @@ pnpx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-Vari
 ## 04
 
 Example 04 contains a website using subsetting fonts.
+
+We will use [fonttools](https://github.com/fonttools/fonttools) to subset the fonts.
+
+```bash
+# Installing fonttools
+pip install fonttools # or brew install fonttools
+
+# Installing brotli
+pip install brotli # or brew install brotli
+
+# Removing unused axis
+fonttools varLib.instancer ./04/fonts/Roboto-VariableFont.woff2 wdth=100 wght=100:900
+
+# Subsetting the font using fonttools with Latin charset and removing all layout features
+pyftsubset ./04/fonts/Roboto-VariableFont-partial.woff2 --unicodes="U+000-5FF" --layout-features="" --flavor="woff2"
+
+# Or you can subset the font using a specific file
+pyftsubset ./04/fonts/Roboto-VariableFont-partial.woff2 --text-file="./04/index.html" --layout-features="" --flavor="woff2"
+```
+
+[Link](./04/index.html)
 
 ## 05
 
