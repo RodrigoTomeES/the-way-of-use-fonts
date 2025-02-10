@@ -32,17 +32,6 @@
 }
 
 @font-face {
-  font-family: "Roboto Fallback";
-  font-style: normal;
-  font-weight: 900;
-  src: local("Arial Black");
-  ascent-override: 92.77%;
-  descent-override: 24.41%;
-  line-gap-override: 0%;
-  size-adjust: 100%;
-}
-
-@font-face {
   font-family: "RobotoCondensed";
   font-style: normal;
   font-weight: 900;
