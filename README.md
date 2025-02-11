@@ -1,12 +1,14 @@
 # The way of use fonts
 
-## 01
+## Demo
+
+### 01
 
 Example 01 contains a website that use fonts without any optimization.
 
 [Link](./01/index.html)
 
-## 02
+### 02
 
 Example 02 contains a website with the best format for the fonts that is right now woff2.
 
@@ -38,7 +40,7 @@ fonttools ttLib ./03/fonts/Roboto-VariableFont.ttf --flavor woff2 -o ./03/fonts/
 
 [Link](./03/index.html)
 
-## 04
+### 04
 
 Example 04 contains a website using subsetting fonts.
 
@@ -55,7 +57,7 @@ pyftsubset ./04/fonts/Roboto-VariableFont-partial.woff2 --text-file="./04/index.
 
 [Link](./04/index.html)
 
-## 05
+### 05
 
 Example 05 contains a website using a good fallback values.
 
@@ -74,24 +76,35 @@ pnpx fontpie ./05/fonts/RobotoCondensed-Black.woff2 --name RobotoCondensed --wei
 
 [Link](./05/index.html)
 
-## 06
+### 06
 
-Example 06 contains a website using a good font-display value.
+Example 06 contains a website using a good [font-display](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) value.
 
 [Link](./06/index.html)
 
-## 07
+### 07
 
-Example 07 contains a website loading fonts asynchronously.
+Example 07 contains a website loading [fonts asynchronously](https://www.filamentgroup.com/lab/load-css-simpler/).
 
 [Link](./07/index.html)
 
-## 08
+### 08
 
-Example 08 contains a website preloading fonts.
+Example 08 contains a website [preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload) in fonts.
 
 [Link](./08/index.html)
 
-## 09 - Extra
+### 09 - Extra
 
-Example 09 contains a website using preconnect for external fonts (like Google Fonts).
+Example 09 contains a website using [preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) for external fonts (like Google Fonts).
+
+## Resources
+
+- [csswizardry.com: Speed Up Google Fonts](https://csswizardry.com/2020/05/the-fastest-google-fonts/)
+- [web.dev: Prevent layout shifting and flashes of invisible text (FOIT) by preloading optional fonts](https://web.dev/articles/preload-optional-fonts)
+- [web.dev: Preload web fonts to improve loading speed](https://web.dev/articles/codelab-preload-web-fonts)
+- [web.dev: Optimize WebFont loading and rendering](https://web.dev/articles/optimize-webfont-loading)
+- [web.dev: Optimize web fonts](https://web.dev/learn/performance/optimize-web-fonts)
+- [web.dev: Reduce web font size](https://web.dev/articles/reduce-webfont-size)
+- [Roboto Font](https://fonts.google.com/specimen/Roboto)
+- [Roboto Condensed Font](https://fonts.google.com/specimen/Roboto+Condensed)
