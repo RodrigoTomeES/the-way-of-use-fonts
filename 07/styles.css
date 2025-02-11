@@ -1,0 +1,68 @@
+
+@font-face {
+  font-family: "Roboto Fallback";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arial");
+  ascent-override: 92.77%;
+  descent-override: 24.41%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: "Roboto Fallback";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Arial Bold");
+  ascent-override: 92.77%;
+  descent-override: 24.41%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: "RobotoCondensed Fallback";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Arial Bold");
+  ascent-override: 92.77%;
+  descent-override: 24.41%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+:root {
+  --font-family-primary: "Roboto", "Roboto Fallback";
+  --font-family-secondary: "RobotoCondensed", "RobotoCondensed Fallback";
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--font-family-primary);
+  padding: 24px;
+  color: #f0f0f0;
+  background-color: #333;
+  display: inline-block;
+  border-radius: 12px;
+  width: min(400px, 100%);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  font-family: var(--font-family-secondary);
+}
+
+section {
+  max-width: 800px;
+}
