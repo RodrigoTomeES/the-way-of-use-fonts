@@ -92,13 +92,19 @@ pnpx fontpie ./05/fonts/RobotoCondensed-Black.woff2 --name RobotoCondensed --wei
 
 Example 06 contains a website using a good font-display value.
 
+[Link](./06/index.html)
+
 ## 07
 
 Example 07 contains a website loading fonts asynchronously.
 
+[Link](./07/index.html)
+
 ## 08
 
 Example 08 contains a website preloading fonts.
+
+[Link](./08/index.html)
 
 ## 09 - Extra
 
