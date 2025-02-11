@@ -10,17 +10,17 @@ Example 01 contains a website that use fonts without any optimization.
 
 Example 02 contains a website with the best format for the fonts that is right now woff2.
 
-You can use [font-convert](https://github.com/hayes0724/web-font-converter) npm package to convert fonts to woff2 format.
+We will use [fonttools](https://github.com/fonttools/fonttools) to convert fonts to woff2 format.
 
 ```bash
-# Using bun
-bunx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regular.ttf' --pathOut='./02/fonts/Roboto-Regular.woff2'
+# Installing fonttools
+pip install fonttools # or brew install fonttools
 
-# Using npx
-npx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regular.ttf' --pathOut='./02/fonts/Roboto-Regular.woff2'
+# Installing brotli
+pip install brotli # or brew install brotli
 
-# Using pnpx
-pnpx @hayes0724/web-font-converter font-convert --pathIn='./02/fonts/Roboto-Regular.ttf' --pathOut='./02/fonts/Roboto-Regular.woff2'
+# Compresing using brotli a TTF font to WOFF2
+fonttools ttLib ./01/fonts/Roboto-Regular.ttf --flavor woff2 -o ./01/fonts/Roboto-Regular.woff2
 ```
 
 [Link](./02/index.html)
@@ -32,14 +32,8 @@ Example 02 contains a website using variable fonts instead of multilple static f
 Instead of using multiple static fonts, you can use a single variable font that contains all the styles.
 
 ```bash
-# Using bun
-bunx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-VariableFont.ttf' --pathOut='./03/fonts/Roboto-VariableFont.woff2'
-
-# Using npx
-npx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-VariableFont.ttf' --pathOut='./03/fonts/Roboto-VariableFont.woff2'
-
-# Using pnpx
-pnpx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-VariableFont.ttf' --pathOut='./03/fonts/Roboto-VariableFont.woff2'
+# Compresing using brotli a TTF font to WOFF2
+fonttools ttLib ./03/fonts/Roboto-VariableFont.ttf --flavor woff2 -o ./03/fonts/Roboto-VariableFont.woff2
 ```
 
 [Link](./03/index.html)
@@ -48,15 +42,7 @@ pnpx @hayes0724/web-font-converter font-convert --pathIn='./03/fonts/Roboto-Vari
 
 Example 04 contains a website using subsetting fonts.
 
-We will use [fonttools](https://github.com/fonttools/fonttools) to subset the fonts.
-
 ```bash
-# Installing fonttools
-pip install fonttools # or brew install fonttools
-
-# Installing brotli
-pip install brotli # or brew install brotli
-
 # Removing unused axis
 fonttools varLib.instancer ./04/fonts/Roboto-VariableFont.woff2 wdth=100 wght=100:900
 
