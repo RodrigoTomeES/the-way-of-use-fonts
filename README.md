@@ -98,7 +98,7 @@ Example 08 contains a website [preload](https://developer.mozilla.org/en-US/docs
 
 Example 09 contains a website using [preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) for external fonts (like Google Fonts).
 
-## Resources
+## Resources
 
 - [csswizardry.com: Speed Up Google Fonts](https://csswizardry.com/2020/05/the-fastest-google-fonts/)
 - [web.dev: Prevent layout shifting and flashes of invisible text (FOIT) by preloading optional fonts](https://web.dev/articles/preload-optional-fonts)
