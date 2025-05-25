@@ -27,7 +27,7 @@ fonttools ttLib ./01/fonts/Roboto-Regular.ttf --flavor woff2 -o ./01/fonts/Robot
 
 [Link](./02/index.html)
 
-## 03
+### 03
 
 Example 02 contains a website using variable fonts instead of multilple static fonts.
 
